@@ -190,6 +190,12 @@ nav li a {
   margin-bottom: 10px;
 }
 
+.society {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .foto {
   background-color: #229bd8;
   border: 2px solid black;
@@ -257,6 +263,62 @@ nav li a {
   font-size: 16px;
   line-height: 1.5;
 
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.society1{
+  width: 400px;
+  background-color: #23b8d9;
+  border: 2px solid black;
+  margin-left: 20px;
+  display: grid;
+  place-items: center; /* центрирует и по горизонтали и по вертикали */
+  border-radius: 10px;
+}
+
+.society1 img {
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.society1 a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.society2{
+  width: 400px;
+  background-color: #23b8d9;
+  border: 2px solid black;
+  margin-right: 20px;
+  display: grid;
+  place-items: center; /* центрирует и по горизонтали и по вертикали */
+  border-radius: 10px;
+}
+
+.society2 img {
+  width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.society2 a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .card {
