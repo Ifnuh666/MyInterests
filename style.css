@@ -138,7 +138,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  background: #23b8d9;
+  background: #9ecee4;
   position: relative; /* Добавляем для позиционирования nav */
   margin-bottom: 40px;
 }
@@ -178,10 +178,26 @@ nav ul {
 nav li {
   padding: 0 20px;
 }
-
 nav li a {
-  display: inline-block;
-  padding: 0 20px;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+nav li a:hover::after {
+    transform: scaleX(1);
 }
 
 .about {
@@ -197,16 +213,16 @@ nav li a {
 }
 
 .foto {
-  background-color: #229bd8;
-  border: 2px solid black;
+  background-color: #daf3ff;
   display: flex; /* Включаем flex-расположение */
   align-items: flex-start; /* Выравниваем элементы по верху */
   gap: 20px;
   margin-bottom: 20px;
   justify-content: space-evenly;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-left: 5px;
   margin-right: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .foto > img {
@@ -229,16 +245,16 @@ nav li a {
 }
 
 .path {
-  background-color: #229bd8;
-  border: 2px solid black;
+  background-color: #daf3ff;
   padding: 20px;
   gap: 10px;
   display: flex;
   justify-content: space-evenly;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .path > .school > img {
@@ -248,7 +264,7 @@ nav li a {
 }
 
 .path > .college > img {
-  border-radius: 20px;
+  border-radius: 30px;
   height: 300px;
   padding: 10px;
 }
@@ -256,29 +272,43 @@ nav li a {
 .word_school p {
   font-size: 16px;
   line-height: 1.5;
-
 }
 
 .word_college p {
   font-size: 16px;
   line-height: 1.5;
-
 }
+
+.path_text > .word_college{
+  text-align: right;
+}
+
+.path_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 
 .list {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
+  margin-top: 20px;
 }
 
-.society1{
+.society1 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+}
+
+.society1:hover{
+  transform: scale(1.1);
 }
 
 .society1 img {
@@ -296,14 +326,18 @@ nav li a {
   padding-right: 5px;
 }
 
-.society2{
+.society2 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
+}
+
+.society2:hover{
+  transform: scale(1.1);
 }
 
 .society2 img {
@@ -328,12 +362,12 @@ nav li a {
 
 .card1 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card1 img {
@@ -351,12 +385,12 @@ nav li a {
 
 .card2 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card2 img {
@@ -374,12 +408,12 @@ nav li a {
 
 .card3 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card3 img {
@@ -403,12 +437,12 @@ nav li a {
 
 .card4 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card4 img {
@@ -426,12 +460,12 @@ nav li a {
 
 .card5 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card5 img {
@@ -449,12 +483,12 @@ nav li a {
 
 .card6 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card6 img {
@@ -479,12 +513,12 @@ nav li a {
 
 .card7 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card7 img {
@@ -502,12 +536,12 @@ nav li a {
 
 .card8 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card8 img {
@@ -525,12 +559,12 @@ nav li a {
 
 .card9 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-right: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card9 img {
@@ -555,12 +589,12 @@ nav li a {
 
 .card10 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card10 img {
@@ -578,13 +612,13 @@ nav li a {
 
 .card11 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
   margin-right: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card11 img {
@@ -602,13 +636,13 @@ nav li a {
 
 .card12 {
   width: 400px;
-  background-color: #23b8d9;
-  border: 2px solid black;
+  background-color: #9ecee4;
   margin-left: 20px;
   display: grid;
   place-items: center; /* центрирует и по горизонтали и по вертикали */
   border-radius: 10px;
   margin-right: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.822);
 }
 
 .card12 img {
